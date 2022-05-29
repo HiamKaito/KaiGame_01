@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LivingEntity : MonoBehaviour
+public abstract class LivingEntity : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [Header("Enity stats")]
+    public Stats stats;
+    
+    [Space(10)]
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [Header("Entity Health Point")]
+    [SerializeField]    protected float _maxHitPoint;
+    [SerializeField]    protected float _hitPoint;
+
+
+
 }
