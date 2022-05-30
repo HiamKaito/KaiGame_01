@@ -4,32 +4,26 @@ using UnityEngine;
 
 public class PlayerSensor : MonoBehaviour
 {
-    [SerializeField] private int _colCount = 0;
-    [SerializeField] private float _disableTimer;
+    [SerializeField] private bool _isTouched = false;
 
     private void OnEnable()
     {
-        _colCount = 0;
+        this._isTouched = true;
     }
 
     public bool State()
     {
-        if (_disableTimer > 0) return false;
-        return true;
+        return this._isTouched;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        _colCount++;
+        if (other.tag == "Ground") { this._isTouched = true; }
     }
 
-    private void Update()
+    private void OnTriggerExit2D(Collider2D other)
     {
-        _disableTimer -= Time.deltaTime;
+        if (other.tag == "Ground") { this._isTouched = false; }
     }
 
-    public void Disable(float duration)
-    {
-        _disableTimer = duration;
-    }
 }
