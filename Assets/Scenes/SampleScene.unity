@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 55271997}
   - component: {fileID: 55271996}
   - component: {fileID: 55271995}
+  - component: {fileID: 55271999}
   - component: {fileID: 55271994}
   m_Layer: 0
   m_Name: Player
@@ -159,8 +160,8 @@ MonoBehaviour:
   _jumpForce: 11
   _isFacingRight: 1
   _rb2D: {fileID: 0}
+  animator: {fileID: 0}
   _groundSensor: {fileID: 0}
-  _wallSensor: {fileID: 0}
 --- !u!50 &55271995
 Rigidbody2D:
   serializedVersion: 4
@@ -275,10 +276,29 @@ Transform:
   - {fileID: 2046388265}
   - {fileID: 180792078}
   - {fileID: 7920332462743047637}
-  - {fileID: 686133534}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &55271999
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55271992}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a721c68ccae7f434abeb0b97514330e5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &180792077
 GameObject:
   m_ObjectHideFlags: 0
@@ -2936,68 +2956,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &686133533
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 686133534}
-  - component: {fileID: 686133536}
-  - component: {fileID: 686133535}
-  m_Layer: 0
-  m_Name: WallSensor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &686133534
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 686133533}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.285, y: 0.267, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 55271998}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &686133535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 686133533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52e7658611c278e448c8f133f7fb4ff3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isTouched: 0
---- !u!58 &686133536
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 686133533}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.10295504}
-  serializedVersion: 2
-  m_Radius: 0.06
 --- !u!1 &1232553907
 GameObject:
   m_ObjectHideFlags: 0
@@ -3044,7 +3002,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.2493439, y: 1}
+    m_SensorSize: {x: 2.5813253, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

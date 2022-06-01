@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Player movement")]
     [SerializeField] private float _movementSpeed = 5.0f;
     [SerializeField] private float _jumpForce = 3.0f;
     [SerializeField] private bool _isFacingRight = true;
 
     [Header("Object interact")]
     public Rigidbody2D _rb2D;
-    public PlayerSensor _groundSensor, _wallSensor;
+    public Animator animator;
+    public PlayerSensor _groundSensor;
 
     Vector2 movement;
 
@@ -18,26 +20,49 @@ public class PlayerController : MonoBehaviour
     {
         _rb2D = GetComponent<Rigidbody2D>();
 
+        animator = GetComponent<Animator>();
+
         _groundSensor = transform.Find("GroundSensor").GetComponent<PlayerSensor>();
-        _wallSensor = transform.Find("WallSensor").GetComponent<PlayerSensor>();
     }
 
     private void Update()
     {
+
+        checkMove();
+        checkJump();
+    }
+
+    private void FixedUpdate()
+    {
+        _rb2D.velocity = new Vector2(movement.x * Time.fixedDeltaTime * _movementSpeed, _rb2D.velocity.y);
+    }
+
+    //===========================================================================================================================
+    //===========================================================================================================================
+    private void Flip()
+    {
+        _isFacingRight = !_isFacingRight;
+        transform.Rotate(0.0f, 180.0f, 0.0f);
+    }
+
+    private void checkMove()
+    {
         movement.x = Input.GetAxis("Horizontal");
-        // InputDirection = Input.GetAxisRaw("Horizontal");
 
-        if (Input.GetKeyDown(KeyCode.Space) && _groundSensor.State())
+        if (movement.x != 0)
         {
-            Debug.Log("Player Jump");
-            _rb2D.velocity = new Vector2(_rb2D.velocity.x, _jumpForce);
+            animator.SetBool("isRun", true);
+        }
+        else
+        {
+            animator.SetBool("isRun", false);
         }
 
-        if ((movement.x > 0 && _wallSensor.State()))
-        {
-            _rb2D.velocity = new Vector2(_rb2D.velocity.x, Mathf.Clamp(_rb2D.velocity.y, 0f, transform.position.z));
-        }
+        checkFlpi();
+    }
 
+    private void checkFlpi()
+    {
         if (_isFacingRight && movement.x < 0)
         {
             Flip();
@@ -48,15 +73,12 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
+    private void checkJump()
     {
-        _rb2D.velocity = new Vector2(movement.x * Time.fixedDeltaTime * _movementSpeed, _rb2D.velocity.y);
+        if (Input.GetKeyDown(KeyCode.Space) && _groundSensor.State())
+        {
+            Debug.Log("Player Jump");
+            _rb2D.velocity = new Vector2(_rb2D.velocity.x, _jumpForce);
+        }
     }
-
-    private void Flip()
-    {
-        _isFacingRight = !_isFacingRight;
-        transform.Rotate(0.0f, 180.0f, 0.0f);
-    }
-
 }
