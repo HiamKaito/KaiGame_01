@@ -6,17 +6,21 @@ public partial class PlayerController : MonoBehaviour
 {
     [Header("Attack System")]
     [SerializeField] private int _comboCount = 0;
-    [SerializeField] private int _maxComboCount = 3;
+    [SerializeField] private int _maxComboCount = 2;
+    public bool isPressAtkBtn()
+    {
+        return Input.GetKeyDown(KeyCode.J);
+    }
 
     private void CheckCombo()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0)) { Start_Combo(); }
-        else { FinishCombo(); }
+        if (isPressAtkBtn()) { Start_Combo(); }
+        // else { FinishCombo(); }
     }
 
     public void Start_Combo()
     {
-        if (_comboCount < _maxComboCount)
+        if (_comboCount < _maxComboCount && isPressAtkBtn())
         {
             _comboCount++;
             animator.SetTrigger("Attack_" + _comboCount);

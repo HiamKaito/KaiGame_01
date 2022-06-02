@@ -156,12 +156,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e45ea248a82854783b6365cddd1570, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _movementSpeed: 500
-  _jumpForce: 11
+  _movementSpeed: 300
+  _jumpForce: 10
   _isFacingRight: 1
   _rb2D: {fileID: 0}
   animator: {fileID: 0}
   _groundSensor: {fileID: 0}
+  _comboCount: 0
+  _maxComboCount: 2
 --- !u!50 &55271995
 Rigidbody2D:
   serializedVersion: 4
@@ -3002,7 +3004,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.5813253, y: 1}
+    m_SensorSize: {x: 2.9249146, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

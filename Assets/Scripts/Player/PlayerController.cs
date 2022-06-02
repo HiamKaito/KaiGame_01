@@ -5,8 +5,8 @@ using UnityEngine;
 public partial class PlayerController : MonoBehaviour
 {
     [Header("Player movement")]
-    [SerializeField] private float _movementSpeed = 5.0f;
-    [SerializeField] private float _jumpForce = 3.0f;
+    [SerializeField] private float _movementSpeed = 300.0f;
+    [SerializeField] private float _jumpForce = 10.0f;
     [SerializeField] private bool _isFacingRight = true;
 
     [Header("Object interact")]
