@@ -14,7 +14,10 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     public PlayerSensor _groundSensor;
 
+    // private unmodified data
     Vector2 movement;
+    int attackCount = 1;
+
 
     private void Start()
     {
@@ -30,6 +33,7 @@ public class PlayerController : MonoBehaviour
 
         checkMove();
         checkJump();
+        checkAttack();
     }
 
     private void FixedUpdate()
@@ -52,10 +56,12 @@ public class PlayerController : MonoBehaviour
         if (movement.x != 0)
         {
             animator.SetBool("isRun", true);
+            animator.SetBool("isIdle", false);
         }
         else
         {
             animator.SetBool("isRun", false);
+            animator.SetBool("isIdle", true);
         }
 
         checkFlpi();
@@ -79,6 +85,25 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("Player Jump");
             _rb2D.velocity = new Vector2(_rb2D.velocity.x, _jumpForce);
+        }
+    }
+
+    private void checkAttack()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            if (attackCount < 3)
+            {
+                animator.SetTrigger("Attack_" + attackCount);
+                animator.SetBool("isIdle", false);
+                attackCount++;
+            }
+            else
+            {
+                attackCount = 1;
+                animator.SetBool("isIdle", true);
+            }
+
         }
     }
 }
