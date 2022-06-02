@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public partial class PlayerController : MonoBehaviour
 {
     [Header("Player movement")]
     [SerializeField] private float _movementSpeed = 5.0f;
@@ -16,7 +16,6 @@ public class PlayerController : MonoBehaviour
 
     // private unmodified data
     Vector2 movement;
-    int attackCount = 1;
 
 
     private void Start()
@@ -33,7 +32,7 @@ public class PlayerController : MonoBehaviour
 
         checkMove();
         checkJump();
-        checkAttack();
+        CheckCombo();
     }
 
     private void FixedUpdate()
@@ -56,12 +55,10 @@ public class PlayerController : MonoBehaviour
         if (movement.x != 0)
         {
             animator.SetBool("isRun", true);
-            animator.SetBool("isIdle", false);
         }
         else
         {
             animator.SetBool("isRun", false);
-            animator.SetBool("isIdle", true);
         }
 
         checkFlpi();
@@ -88,22 +85,4 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void checkAttack()
-    {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            if (attackCount < 3)
-            {
-                animator.SetTrigger("Attack_" + attackCount);
-                animator.SetBool("isIdle", false);
-                attackCount++;
-            }
-            else
-            {
-                attackCount = 1;
-                animator.SetBool("isIdle", true);
-            }
-
-        }
-    }
 }
