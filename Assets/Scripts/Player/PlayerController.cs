@@ -25,6 +25,10 @@ public partial class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
 
         _groundSensor = transform.Find("GroundSensor").GetComponent<PlayerSensor>();
+
+
+        // attack system
+        atkCollider2d = transform.Find("Atk Range").GetComponent<Collider2D>();
     }
 
     private void Update()
