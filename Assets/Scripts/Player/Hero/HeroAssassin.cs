@@ -15,8 +15,10 @@ public class HeroAssassin : Hero
             foreach (Collider2D enity in col)
             {
                 if (enity.tag == "Enemy")
-                    enity.GetComponent<LivingEntity>().takeDamage();
-                Debug.Log("Attack enemy");
+                {
+                    enity.GetComponent<LivingEntity>().takeDamage(stats.attack);
+                    Debug.Log("Attack enemy");
+                }
             }
         }
     }

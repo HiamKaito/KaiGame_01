@@ -11,6 +11,6 @@ public class EnemyWarrior : Enemy
 
     public override void hitBy(HeroAssassin hero)
     {
-        throw new System.NotImplementedException();
+        Debug.Log("I take damage from HeroAssassin : ");
     }
 }
