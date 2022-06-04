@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c44831b910a351442897174f576cd115, type: 3}
-  m_Name: HeroWarrior
+  m_Script: {fileID: 11500000, guid: 0e7158a4ab550e949b2115b5d8429fe6, type: 3}
+  m_Name: E_Wizard
   m_EditorClassIdentifier: 
-  HealthPoint: 200
-  ManaPoint: 50
-  defend: 100
-  attack: 20
+  HealthPoint: 400
+  defend: 150
+  attack: 40
+  speed: 10

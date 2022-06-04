@@ -8,9 +8,6 @@ public partial class PlayerController : MonoBehaviour
     [SerializeField] private int _comboCount = 0;
     [SerializeField] private int _maxComboCount = 2;
 
-
-    [SerializeField] private Collider2D atkCollider2d;
-
     public bool isPressAtkBtn() => Input.GetKeyDown(KeyCode.J);
 
     private void CheckCombo()
@@ -28,14 +25,7 @@ public partial class PlayerController : MonoBehaviour
     {
         _comboCount++;
         animator.SetTrigger("Attack_" + _comboCount);
-
-        atkCollider2d.enabled = true;
     }
 
-    public void FinishCombo()
-    {
-        _comboCount = 0;
-
-        atkCollider2d.enabled = false;
-    }
+    public void FinishCombo() => _comboCount = 0;
 }

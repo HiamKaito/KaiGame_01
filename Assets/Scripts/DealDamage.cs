@@ -4,28 +4,29 @@ using UnityEngine;
 
 public class DealDamage : MonoBehaviour
 {
-    // public void Melee()
-    // {
-    //     Collider2D[] col = Physics2D.OverlapCircleAll(transform.position, 4.0f);
-    //     if (col != null)
-    //     {
-    //         foreach (Collider2D enity in col)
-    //         {
-    //             if (enity.tag == "Enemy")
-    //                 enity.GetComponent<LivingEntity>().hit();
-    //         }
-    //     }
-    // }
-
-
-    private void OnTriggerEnter2D(Collider2D other)
+    public void damaged()
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("LivingEntity"))
+        Collider2D[] col = Physics2D.OverlapCircleAll(transform.position, 4.0f);
+        if (col != null)
         {
-            var entity = other.GetComponent<LivingEntity>();
-
-            entity.takeDamage();
+            foreach (Collider2D enity in col)
+            {
+                if (enity.tag == "Enemy")
+                    enity.GetComponent<LivingEntity>().takeDamage();
+            }
         }
     }
+
+
+    // private void OnTriggerEnter2D(Collider2D other)
+    // {
+    //     Debug.Log("On Trigger Enter");
+    //     // if (other.gameObject.layer == LayerMask.NameToLayer("LivingEntity"))
+    //     // {
+    //     //     var entity = other.GetComponent<LivingEntity>();
+
+    //     //     entity.takeDamage();
+    //     // }
+    // }
 
 }

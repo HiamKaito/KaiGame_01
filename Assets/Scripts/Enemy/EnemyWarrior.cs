@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class EnemyWarrior : Enemy
 {
-    public override void hitBy(HeroWarrior hero)
-    {
-        takeDamage();
-    }
+    // public override void hitBy(HeroWarrior hero)
+    // {
+    //     throw new System.NotImplementedException();
+    // }
 
-    public override void hitBy(HeroAssasin hero)
+    public override void hitBy(HeroAssassin hero)
     {
         throw new System.NotImplementedException();
     }

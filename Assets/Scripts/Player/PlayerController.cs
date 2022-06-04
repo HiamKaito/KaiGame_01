@@ -13,6 +13,7 @@ public partial class PlayerController : MonoBehaviour
     public Rigidbody2D _rb2D;
     public Animator animator;
     public PlayerSensor _groundSensor;
+    public Hero hero;
 
     // private unmodified data
     Vector2 movement;
@@ -26,9 +27,10 @@ public partial class PlayerController : MonoBehaviour
 
         _groundSensor = transform.Find("GroundSensor").GetComponent<PlayerSensor>();
 
+        hero = GetComponent<Hero>();
+        _movementSpeed = hero.stats.speed;
+        _jumpForce = hero.stats.jumpForce;
 
-        // attack system
-        atkCollider2d = transform.Find("Atk Range").GetComponent<Collider2D>();
     }
 
     private void Update()
@@ -41,7 +43,7 @@ public partial class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _rb2D.velocity = new Vector2(movement.x * Time.fixedDeltaTime * _movementSpeed, _rb2D.velocity.y);
+        _rb2D.velocity = new Vector2(movement.x * Time.fixedDeltaTime * _movementSpeed * 10, _rb2D.velocity.y);
     }
 
     //===========================================================================================================================

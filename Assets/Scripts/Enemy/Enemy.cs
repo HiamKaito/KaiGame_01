@@ -4,6 +4,11 @@ using UnityEngine;
 
 public abstract class Enemy : LivingEntity
 {
-    public abstract void hitBy(HeroWarrior hero);
-    public abstract void hitBy(HeroAssasin hero);
+
+    [Header("Enemy Stats")]
+    [SerializeField] private EnemyStats _stats;
+
+
+    // public abstract void hitBy(HeroWarrior hero);
+    public abstract void hitBy(HeroAssassin hero);
 }

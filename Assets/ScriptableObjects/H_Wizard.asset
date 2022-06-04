@@ -9,10 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c44831b910a351442897174f576cd115, type: 3}
-  m_Name: EnemyWarrior
+  m_Script: {fileID: 11500000, guid: 3797210abf91ce04e8b0db9d8bae1f21, type: 3}
+  m_Name: H_Wizard
   m_EditorClassIdentifier: 
   HealthPoint: 100
-  ManaPoint: 10
-  defend: 0
-  attack: 5
+  ManaPoint: 300
+  defend: 150
+  attack: 100
+  speed: 5
