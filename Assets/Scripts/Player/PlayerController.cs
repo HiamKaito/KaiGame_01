@@ -2,19 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public partial class PlayerController : MonoBehaviour
 {
     [Header("Player movement")]
-    [SerializeField] private float _movementSpeed = 5.0f;
-    [SerializeField] private float _jumpForce = 3.0f;
+    [SerializeField] private float _movementSpeed = 300.0f;
+    [SerializeField] private float _jumpForce = 10.0f;
     [SerializeField] private bool _isFacingRight = true;
 
     [Header("Object interact")]
     public Rigidbody2D _rb2D;
     public Animator animator;
     public PlayerSensor _groundSensor;
+    public Hero hero;
 
+    // private unmodified data
     Vector2 movement;
+
 
     private void Start()
     {
@@ -23,6 +26,11 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
 
         _groundSensor = transform.Find("GroundSensor").GetComponent<PlayerSensor>();
+
+        hero = GetComponent<Hero>();
+        _movementSpeed = hero.stats.speed;
+        _jumpForce = hero.stats.jumpForce;
+
     }
 
     private void Update()
@@ -30,11 +38,12 @@ public class PlayerController : MonoBehaviour
 
         checkMove();
         checkJump();
+        CheckCombo();
     }
 
     private void FixedUpdate()
     {
-        _rb2D.velocity = new Vector2(movement.x * Time.fixedDeltaTime * _movementSpeed, _rb2D.velocity.y);
+        _rb2D.velocity = new Vector2(movement.x * Time.fixedDeltaTime * _movementSpeed * 10, _rb2D.velocity.y);
     }
 
     //===========================================================================================================================
@@ -81,4 +90,5 @@ public class PlayerController : MonoBehaviour
             _rb2D.velocity = new Vector2(_rb2D.velocity.x, _jumpForce);
         }
     }
+
 }
