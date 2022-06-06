@@ -6,6 +6,11 @@ public partial class PlayerController : MonoBehaviour
 {
     [Header("Attack System")]
     [SerializeField] private int _comboCount = 0;
+    public int ComboCount
+    {
+        get { return _comboCount; }
+        set { _comboCount = value; }
+    }
     [SerializeField] private int _maxComboCount = 2;
 
     public bool isPressAtkBtn() => Input.GetKeyDown(KeyCode.J);

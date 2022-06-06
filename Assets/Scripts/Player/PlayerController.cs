@@ -8,6 +8,12 @@ public partial class PlayerController : MonoBehaviour
     [SerializeField] private float _movementSpeed = 300.0f;
     [SerializeField] private float _jumpForce = 10.0f;
     [SerializeField] private bool _isFacingRight = true;
+    public bool isFacingRight
+    {
+        get { return _isFacingRight; }
+        set { _isFacingRight = value; }
+    }
+
 
     [Header("Object interact")]
     public Rigidbody2D _rb2D;
@@ -18,9 +24,13 @@ public partial class PlayerController : MonoBehaviour
     // private unmodified data
     Vector2 movement;
 
+    public static PlayerController instants;
+
 
     private void Start()
     {
+        instants = this;
+
         _rb2D = GetComponent<Rigidbody2D>();
 
         animator = GetComponent<Animator>();
@@ -67,16 +77,12 @@ public partial class PlayerController : MonoBehaviour
             animator.SetBool("isRun", false);
         }
 
-        checkFlpi();
+        checkFlip();
     }
 
-    private void checkFlpi()
+    private void checkFlip()
     {
-        if (_isFacingRight && movement.x < 0)
-        {
-            Flip();
-        }
-        else if (!_isFacingRight && movement.x > 0)
+        if ((_isFacingRight && movement.x < 0) || (!_isFacingRight && movement.x > 0))
         {
             Flip();
         }
