@@ -17,3 +17,4 @@ MonoBehaviour:
   defend: 150
   attack: 100
   speed: 5
+  jumpForce: 10

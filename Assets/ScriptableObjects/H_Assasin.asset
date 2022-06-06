@@ -15,5 +15,6 @@ MonoBehaviour:
   HealthPoint: 300
   ManaPoint: 100
   defend: 50
-  attack: 30
+  attack: 3
   speed: 30
+  jumpForce: 10

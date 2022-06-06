@@ -6,4 +6,5 @@ public interface IHitable
 {
     void takeDamage();
     void takeDamage(int damage);
+    void takeDamage(int damage, string damageDealer);
 }

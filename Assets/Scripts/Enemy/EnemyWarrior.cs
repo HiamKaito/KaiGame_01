@@ -11,6 +11,7 @@ public class EnemyWarrior : Enemy
 
     public override void hitBy(HeroAssassin hero)
     {
-        Debug.Log("I take damage from HeroAssassin : ");
+        base._hitPoint -= hero.stats.attack * 1.5f;
     }
+
 }

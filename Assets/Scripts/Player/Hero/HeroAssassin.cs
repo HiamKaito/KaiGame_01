@@ -14,10 +14,12 @@ public class HeroAssassin : Hero
         {
             foreach (Collider2D enity in col)
             {
-                if (enity.tag == "Enemy")
+                if (enity.CompareTag("Enemy"))
                 {
-                    enity.GetComponent<LivingEntity>().takeDamage(stats.attack);
-                    Debug.Log("Attack enemy");
+                    // enity.GetComponent<LivingEntity>().takeDamage(stats.attack);
+                    // Debug.Log("Attack enemy");
+
+                    enity.GetComponent<Enemy>().hitBy(this);
                 }
             }
         }
