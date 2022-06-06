@@ -9,12 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3797210abf91ce04e8b0db9d8bae1f21, type: 3}
-  m_Name: H_Assasin
+  m_Script: {fileID: 11500000, guid: 0e7158a4ab550e949b2115b5d8429fe6, type: 3}
+  m_Name: E_Goblin
   m_EditorClassIdentifier: 
-  HealthPoint: 300
-  ManaPoint: 100
+  HealthPoint: 100
   defend: 50
   attack: 10
-  speed: 30
-  jumpForce: 10
+  speed: 20
