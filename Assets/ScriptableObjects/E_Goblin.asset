@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: E_Goblin
   m_EditorClassIdentifier: 
   HealthPoint: 100
-  defend: 50
+  defend: 10
   attack: 10
   speed: 20

@@ -18,13 +18,8 @@ public partial class E_AnimController : MonoBehaviour
     // private unmodified data
     Vector2 movement;
 
-    public static E_AnimController instants;
-
     private void Start()
     {
-        instants = this;
-
-
         _rb2D = GetComponent<Rigidbody2D>();
 
         animator = GetComponent<Animator>();
@@ -35,6 +30,7 @@ public partial class E_AnimController : MonoBehaviour
         if (enemy == null)
         {
             // find another class
+            enemy = GetComponent<E_Mushroom>();
         }
 
         _movementSpeed = enemy.stats.speed;

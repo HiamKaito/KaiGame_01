@@ -15,8 +15,16 @@ public abstract class Enemy : LivingEntity
         set { _stats = value; }
     }
 
+
+    [SerializeField] protected E_AnimController _animController;
+
     private void Start()
     {
+        _animController = GetComponent<E_AnimController>();
+        _heathBarController = GetComponentInChildren<HeathBarController>();
+        // _heathBarController = GameObject.Find("HealthBar").GetComponent<HeathBarController>();
+        //  _groundSensor = transform.Find("GroundSensor").GetComponent<PlayerSensor>();
+
         base._maxHitPoint = _stats.HealthPoint;
         base._hitPoint = _maxHitPoint;
 
@@ -28,7 +36,7 @@ public abstract class Enemy : LivingEntity
 
     public void Destroy()
     {
-        E_AnimController.instants.Death();
+        _animController.Death();
 
         Destroy(_heathBarController);
         Destroy(gameObject, 3f);
