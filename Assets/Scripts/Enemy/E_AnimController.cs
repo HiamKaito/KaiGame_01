@@ -4,13 +4,13 @@ using UnityEngine;
 
 public partial class E_AnimController : MonoBehaviour
 {
+    [Header("Animation Controller")]
     [Header("Player movement")]
     [SerializeField] private float _movementSpeed = 999.0f;
     [SerializeField] private float _jumpForce = 10.0f;
     [SerializeField] private bool _isFacingRight = true;
 
     [Header("Object interact")]
-    public Rigidbody2D _rb2D;
     public Animator animator;
     public PlayerSensor _groundSensor;
     public Enemy enemy;
@@ -18,14 +18,14 @@ public partial class E_AnimController : MonoBehaviour
     // private unmodified data
     Vector2 movement;
 
+
     private void Start()
     {
-        _rb2D = GetComponent<Rigidbody2D>();
-
         animator = GetComponent<Animator>();
 
         _groundSensor = transform.Find("GroundSensor").GetComponent<PlayerSensor>();
 
+        //todo need better
         enemy = GetComponent<E_Goblin>();
         if (enemy == null)
         {
@@ -36,9 +36,6 @@ public partial class E_AnimController : MonoBehaviour
         _movementSpeed = enemy.stats.speed;
     }
 
-    private void FixedUpdate() => _rb2D.velocity = new Vector2(
-        movement.x * Time.fixedDeltaTime * _movementSpeed * 10, _rb2D.velocity.y
-    );
 
     //===========================================================================================================================
     //===========================================================================================================================
@@ -63,7 +60,10 @@ public partial class E_AnimController : MonoBehaviour
 
     public void checkJump(bool flag)
     {
-        if (flag && _groundSensor.State()) { _rb2D.velocity = new Vector2(_rb2D.velocity.x, _jumpForce); }
+        if (flag && _groundSensor.State())
+        {
+            //do something
+        }
     }
 
     public void Death()

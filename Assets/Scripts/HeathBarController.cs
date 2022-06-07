@@ -29,4 +29,9 @@ public class HeathBarController : MonoBehaviour
     {
         canvasG.alpha = value;
     }
+
+    public void Destroy()
+    {
+        Destroy(gameObject);
+    }
 }

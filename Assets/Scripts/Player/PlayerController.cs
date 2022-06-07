@@ -92,7 +92,6 @@ public partial class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && _groundSensor.State())
         {
-            Debug.Log("Player Jump");
             _rb2D.velocity = new Vector2(_rb2D.velocity.x, _jumpForce);
         }
     }

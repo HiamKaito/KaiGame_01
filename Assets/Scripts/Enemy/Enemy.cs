@@ -8,7 +8,6 @@ public abstract class Enemy : LivingEntity
     [Header("Enemy Stats")]
     [SerializeField] protected EnemyStats _stats;
     [SerializeField] protected HeathBarController _heathBarController;
-
     public EnemyStats stats
     {
         get { return _stats; }
@@ -18,6 +17,7 @@ public abstract class Enemy : LivingEntity
 
     [SerializeField] protected E_AnimController _animController;
 
+    [SerializeField] protected GameObject _floatingTextDame;
     private void Start()
     {
         _animController = GetComponent<E_AnimController>();
@@ -38,7 +38,7 @@ public abstract class Enemy : LivingEntity
     {
         _animController.Death();
 
-        Destroy(_heathBarController);
-        Destroy(gameObject, 3f);
+        _heathBarController.Destroy();
+        Destroy(gameObject, 5f);
     }
 }

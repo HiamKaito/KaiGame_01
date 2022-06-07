@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e7158a4ab550e949b2115b5d8429fe6, type: 3}
   m_Name: E_Mushroom
   m_EditorClassIdentifier: 
-  HealthPoint: 500
-  defend: 50
-  attack: 0
-  speed: 0
+  HealthPoint: 50
+  attack: 20
+  speed: 3
