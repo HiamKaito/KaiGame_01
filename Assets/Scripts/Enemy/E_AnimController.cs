@@ -25,7 +25,7 @@ public partial class E_AnimController : MonoBehaviour
 
         _groundSensor = transform.Find("GroundSensor").GetComponent<PlayerSensor>();
 
-        //todo need better
+        //TODO need better
         enemy = GetComponent<E_Goblin>();
         if (enemy == null)
         {

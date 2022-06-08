@@ -20,7 +20,7 @@ public class E_Controller : MonoBehaviour
 
         _rb2D = FindObjectOfType<Rigidbody2D>();
 
-        //todo need better part 2
+        //TODO need better part 2
         _enemy = GetComponent<E_Goblin>();
         if (_enemy == null)
         {
@@ -34,7 +34,14 @@ public class E_Controller : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //todo bug move when dead
+        //* if enemy death
+        if (!_enemy.isAlive)
+        {
+            GetComponent<E_Controller>().enabled = false;
+            return;
+        }
+
+
         if (_playerSensor.isPlayerAround)
         {
             x = playerPosition.position.x;
@@ -42,6 +49,7 @@ public class E_Controller : MonoBehaviour
 
             Movement(x, y);
         }
+        else { _animController.checkMove(0); }
     }
 
     public void Movement(float x, float y)

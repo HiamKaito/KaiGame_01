@@ -10,7 +10,6 @@ public class E_PlayerSensor : MonoBehaviour
         get { return _isPlayerAround; }
         set { _isPlayerAround = value; }
     }
-    [SerializeField] private Transform playerPosition;
     public float x, y;
 
     private void OnTriggerEnter2D(Collider2D other)

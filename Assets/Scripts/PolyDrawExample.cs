@@ -7,14 +7,8 @@ public class PolyDrawExample : MonoBehaviour
     public int numberOfSides;
     public float polygonRadius;
     public Vector2 polygonCenter;
-
-    //! Wanning
-    //? Alert
-    //* Important
     void Update()
     {
-        //todo asdasd
-        //TODO aaaa
         DebugDrawPolygon(polygonCenter, polygonRadius, numberOfSides);
     }
 

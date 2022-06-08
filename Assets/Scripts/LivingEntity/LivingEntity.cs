@@ -10,7 +10,7 @@ public abstract class LivingEntity : MonoBehaviour, IHitable
 
     public virtual void takeDamage() => Debug.Log("I got hit");
 
-    public virtual void takeDamage(int damage) => Debug.Log("I got hit : " + damage);
+    public virtual void takeDamage(float damage) => Debug.Log("I got hit : " + damage);
 
-    public virtual void takeDamage(int damage, string damageDealer) => Debug.Log("I got hit : " + damage + " by " + damageDealer);
+    public virtual void takeDamage(float damage, string damageDealer) => Debug.Log("I got hit : " + damage + " by " + damageDealer);
 }

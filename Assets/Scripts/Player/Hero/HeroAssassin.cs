@@ -25,7 +25,7 @@ public class HeroAssassin : Hero
                     }
                     else
                     {
-                        enity.GetComponent<Enemy>().hitBy(this);
+                        enity.GetComponent<Enemy>().hitBy(this, base.stats.attack);
                     }
                 }
             }

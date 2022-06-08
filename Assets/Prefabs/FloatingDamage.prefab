@@ -94,11 +94,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8fb53b9f65f7c145943c48a82978cd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rb2D: {fileID: 0}
+  _rb2D: {fileID: 4099197039445779592}
   _timeDisplay: 0
   _axis_X: 0
   _speed: 3
   _dropRadius: 4
+  _textMesh: {fileID: 4099197039628603654}
   speed: 0
 --- !u!1 &4099197039628603651
 GameObject:
@@ -112,7 +113,7 @@ GameObject:
   - component: {fileID: 4099197039628603657}
   - component: {fileID: 4099197039628603654}
   m_Layer: 7
-  m_Name: GameObject
+  m_Name: TextManage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
