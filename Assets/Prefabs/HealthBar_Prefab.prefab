@@ -193,7 +193,7 @@ MonoBehaviour:
   _slider: {fileID: 5300693155117891460}
   _low: {r: 1, g: 0, b: 0, a: 1}
   _high: {r: 1, g: 0, b: 0, a: 1}
-  _offset: {x: 0, y: -1.5, z: 0}
+  _offset: {x: 0, y: -2, z: 0}
   canvasG: {fileID: 0}
 --- !u!1 &7234944865978669862
 GameObject:

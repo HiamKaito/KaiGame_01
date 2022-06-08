@@ -1,0 +1,948 @@
+fileFormatVersion: 2
+guid: 94cd136cbe5a6a540b6b5b6d891fa250
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 192
+        width: 511
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b004edd48b9d5984d9c4414545a5064f
+      internalID: -1128312310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 204
+        width: 43
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d89dcef83e875ed4a9abfefec3bdb8df
+      internalID: -2034390972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 100
+        width: 98
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2756538219b31f5459ffee6fde18c411
+      internalID: 1420961775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 117
+        width: 13
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5f97a18240212d489b0e022126b2a5e
+      internalID: 1969584919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 106
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f95e4465cb347e4dbf43e71717e42e8
+      internalID: -609797714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 104
+        width: 31
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe5f3c780b8ae8243a94396880bad649
+      internalID: -215383348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 102
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 634402e76c18653469cf3d420df8df53
+      internalID: 158502886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 86
+        width: 82
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 939e07fde9d1fc94fbbcd59958511fec
+      internalID: 1770092805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 93
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf84e711ec0513a46927a6e616da2121
+      internalID: 758047694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 39
+        width: 96
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77ea01622f2948e45b37c41b970d436b
+      internalID: 49843369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 69
+        width: 53
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75362c3cc7bc80945ace7b763f9b84e4
+      internalID: 1628395973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 88
+        width: 21
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a14762a57a48ce04e81901c39044a1b7
+      internalID: -1567601926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 56
+        width: 50
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d3bddf367d5db4195f0e9f278fa0d1
+      internalID: 136530985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 79
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c3b51b51c0b3b44ab9a5c77873ef414
+      internalID: -1714945317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 82
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2778cdbf49aca4696bde69989dbe69
+      internalID: -2085526298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 22
+        width: 98
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50bbe2c209f2ea6469d0110bb5227a6b
+      internalID: 64226900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 76
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56877f00593a4ed4b996f32c8bd30201
+      internalID: -1339689461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 63
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b3f8eef4df79a4e9a1afd094006c01
+      internalID: 878761816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 70
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607ffd61c5b7cd840ba0b197ce1618f7
+      internalID: -570995074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 59
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac0c8ad8b06ce04bb45ca09b235fc99
+      internalID: 1558644706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 54
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad69109ae794304e863f881c3807de0
+      internalID: 460721880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 52
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 819f26c0a7088e64ca108ffe35956cb8
+      internalID: -1647391955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 19
+        width: 83
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d71e6a77b206d439fd3502b3c4e5f0
+      internalID: 763779707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_23
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 42
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 998fb5d9648350242b43cf5b9194b21d
+      internalID: -1613038456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_24
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 9
+        width: 78
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f26e79eb6cabed43ac9afcf27f8f826
+      internalID: 1475353592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_25
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 43
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5253082b60dbe9644a8717523a3592ac
+      internalID: 937863600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_26
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 40
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c58bf63554a1a4981942bc08aafaf5
+      internalID: 1310283497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_27
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 32
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cda64a9744fdf542a5ca15f2fdf4436
+      internalID: -1564573208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_28
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 31
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18db021189d620949bb55bdbc2b8dff6
+      internalID: 2142566308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_29
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 1
+        width: 71
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 341282c6241e10a4483f663d8ca0075d
+      internalID: -1875785367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_30
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 23
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a6de1725cde2ae42941a044f98bca67
+      internalID: 2009475259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 25
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241e8ff58fbc2054aa7dee2e55b2188d
+      internalID: 367122437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_32
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 53
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a023126b9e6515429b385736818ba99
+      internalID: 218103605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_33
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 22
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65127154905163b4191fa4c3577c9051
+      internalID: -2035111353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_34
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 0
+        width: 41
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 612a26b2896b12a41a344f7eab5a6665
+      internalID: -1888463975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_35
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 15
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9dd1f6b1fee1dc4b9dd030d63ddbb6c
+      internalID: 1065858399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_36
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 18
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d0d66ad0df0dad4d83f8324ee91cdd3
+      internalID: 1807836305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_6: 158502886
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_27: -1564573208
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_9: 49843369
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_16: -1339689461
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_35: 1065858399
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_26: 1310283497
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_15: 64226900
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_31: 367122437
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_4: -609797714
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_14: -2085526298
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_1: -2034390972
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_17: 878761816
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_3: 1969584919
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_13: -1714945317
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_28: 2142566308
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_24: 1475353592
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_18: -570995074
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_2: 1420961775
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_0: -1128312310
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_5: -215383348
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_20: 460721880
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_36: 1807836305
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_8: 758047694
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_19: 1558644706
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_29: -1875785367
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_7: 1770092805
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_22: 763779707
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_33: -2035111353
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_21: -1647391955
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_25: 937863600
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_11: -1567601926
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_32: 218103605
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_30: 2009475259
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_10: 1628395973
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_12: 136530985
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_23: -1613038456
+      horror-decorative-red-blood-driping-blood-splash-red-sprite-illustration-red-blood-driping-blood-splash-red-sprite-paint-184290354-removebg-preview_34: -1888463975
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

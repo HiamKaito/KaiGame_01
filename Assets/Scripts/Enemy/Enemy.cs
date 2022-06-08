@@ -22,7 +22,9 @@ public abstract class Enemy : LivingEntity
     }
 
     [SerializeField] protected E_AnimController _animController;
+
     [SerializeField] protected GameObject _floatingTextDame;
+    [SerializeField] protected GameObject _blood;
 
     private void Start()
     {
@@ -48,9 +50,12 @@ public abstract class Enemy : LivingEntity
 
         // create and set Text Damage
         //TODO need optimize : dont destroy it, just set visible and reload position
-        var textDamage = Instantiate(_floatingTextDame, new Vector3(transform.position.x, transform.position.y + 2), Quaternion.identity);
-        // _floatingTextDame.GetComponent<FloatingText>().setText(damage);
+        var textDamage = Instantiate(_floatingTextDame, new Vector2(transform.position.x, transform.position.y + 1), Quaternion.identity);
+        //! BUG SHOW ERROR
         textDamage.GetComponent<FloatingText>().setText(" " + damage);
+
+
+        var blood = Instantiate(_blood, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
 
 
         _animController.isDamaged();

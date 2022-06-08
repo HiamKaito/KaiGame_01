@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e7158a4ab550e949b2115b5d8429fe6, type: 3}
   m_Name: E_Goblin
   m_EditorClassIdentifier: 
-  HealthPoint: 100
-  defend: 10
+  HealthPoint: 1000
   attack: 10
   speed: 20
