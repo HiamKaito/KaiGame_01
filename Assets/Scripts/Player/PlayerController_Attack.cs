@@ -12,25 +12,40 @@ public partial class PlayerController : MonoBehaviour
         set { _comboCount = value; }
     }
     [SerializeField] private int _maxComboCount = 2;
+    [SerializeField] private bool _isOnComboStatus = false;
 
-    public bool isPressAtkBtn() => Input.GetKeyDown(KeyCode.J);
+    private bool isPressAtkBtn() => Input.GetKeyDown(KeyCode.J);
 
     private void CheckCombo()
     {
-        if (isPressAtkBtn()) { Start_Combo(); }
+        if (isPressAtkBtn() && !_isOnComboStatus) { Start_Combo(); }
+    }
+
+    public void ComboStatus_True()
+    {
+        _isOnComboStatus = true;
+    }
+
+    public void ComboStatus_False()
+    {
+        _isOnComboStatus = false;
     }
 
     public void Start_Combo()
     {
         if (_comboCount < _maxComboCount && isPressAtkBtn()) { NextCombo(); }
-        else { FinishCombo(); }
+        //! BUG combo count
+        else { if (_comboCount == _maxComboCount && isPressAtkBtn()) { FinishCombo(); } }
     }
 
-    public void NextCombo()
+    private void NextCombo()
     {
+        ComboStatus_True();
+
         _comboCount++;
         animator.SetTrigger("Attack_" + _comboCount);
+        // Debug.Log("Hero is going attact combo " + _comboCount);
     }
 
-    public void FinishCombo() => _comboCount = 0;
+    private void FinishCombo() => _comboCount = 0;
 }

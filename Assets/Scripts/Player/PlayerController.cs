@@ -96,4 +96,13 @@ public partial class PlayerController : MonoBehaviour
         }
     }
 
+    public void isDamaged()
+    {
+        animator.SetTrigger("isDamaged");
+    }
+
+    public void Death()
+    {
+        animator.SetBool("isAlive", false);
+    }
 }
