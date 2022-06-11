@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3797210abf91ce04e8b0db9d8bae1f21, type: 3}
   m_Name: H_Assassin
   m_EditorClassIdentifier: 
-  HealthPoint: 200
-  ManaPoint: 100
-  defend: 50
+  Name: Assassin
+  HealthPoint: 70
   attack: 10
   speed: 30
+  ManaPoint: 100
+  defend: 50
   jumpForce: 10
