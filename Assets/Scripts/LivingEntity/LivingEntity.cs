@@ -8,9 +8,7 @@ public abstract class LivingEntity : MonoBehaviour, IHitable
     [SerializeField] protected float _maxHitPoint;
     [SerializeField] protected float _hitPoint;
 
-    public virtual void takeDamage() => Debug.Log("I got hit");
-
     public virtual void takeDamage(float damage) => Debug.Log("I got hit : " + damage);
+    public abstract void Destroy();
 
-    public virtual void takeDamage(float damage, string damageDealer) => Debug.Log("I got hit : " + damage + " by " + damageDealer);
 }

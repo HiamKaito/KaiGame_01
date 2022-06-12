@@ -16,6 +16,7 @@ public class BloodDrop : MonoBehaviour
 
     [Header("Ouptut")]
     [SerializeField] private float speed = 0f;
+    [SerializeField] private bool _isOnGround = false;
 
     void Start()
     {
@@ -29,8 +30,11 @@ public class BloodDrop : MonoBehaviour
 
     private void FixedUpdate()
     {
-        speed = (_axis_X * Time.fixedDeltaTime * _speed * 10) / Time.fixedDeltaTime;
-        _rb2D.velocity = new Vector2(speed, _rb2D.velocity.y);
+        if (!_isOnGround)
+        {
+            speed = (_axis_X * Time.fixedDeltaTime * _speed * 10) / Time.fixedDeltaTime;
+            _rb2D.velocity = new Vector2(speed, _rb2D.velocity.y);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -40,7 +44,9 @@ public class BloodDrop : MonoBehaviour
             //* Do something when blood on ground
             _bloodDrop.SetActive(false);
             _bloodOnGround.SetActive(true);
-            _rb2D.bodyType = RigidbodyType2D.Static;
+
+            _isOnGround = true;
+            _rb2D.constraints = RigidbodyConstraints2D.FreezeAll;
         }
     }
 }

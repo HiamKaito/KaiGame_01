@@ -4,9 +4,17 @@ using UnityEngine;
 
 public class E_Goblin : Enemy
 {
-    public override void hitBy(HeroAssassin hero, float damage)
+    public override void Hit(Hero hero, float damageDeal)
     {
-        // damage += damage / 2;
+        Debug.Log(base._stats.Name + " deal damage " + damageDeal + " to " + hero.stats.Name);
+        hero.HitBy(this, damageDeal);
+    }
+    public override void HitBy(HeroAssassin hero, float damage)
+    {
+        damage += base._stats.H_AssAtk_Inc;
+
+        Debug.Log(base._stats.Name + " got damaged " + damage + " by " + hero.stats.Name);
+
         base.takeDamage(damage);
     }
 }

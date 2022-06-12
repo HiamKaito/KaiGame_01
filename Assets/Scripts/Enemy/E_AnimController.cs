@@ -9,6 +9,10 @@ public partial class E_AnimController : MonoBehaviour
     [SerializeField] private float _movementSpeed = 999.0f;
     [SerializeField] private float _jumpForce = 10.0f;
     [SerializeField] private bool _isFacingRight = true;
+    public bool isFacingRight
+    {
+        get { return _isFacingRight; }
+    }
 
     [Header("Object interact")]
     public Animator animator;
@@ -74,5 +78,10 @@ public partial class E_AnimController : MonoBehaviour
     public void isDamaged()
     {
         animator.SetTrigger("isDamaged");
+    }
+
+    public void attackAtCombo(int pos)
+    {
+        animator.SetTrigger("Attack_" + pos);
     }
 }

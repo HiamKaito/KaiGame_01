@@ -18,4 +18,4 @@ MonoBehaviour:
   speed: 30
   ManaPoint: 100
   defend: 50
-  jumpForce: 10
+  jumpForce: 15
