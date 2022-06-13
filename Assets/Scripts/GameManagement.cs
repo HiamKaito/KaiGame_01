@@ -12,6 +12,7 @@ public class GameManagement : MonoBehaviour
     }
     [SerializeField] private bool _isPlayerAlive = true;
 
+
     public static GameManagement instants;
 
     private void Start()
@@ -29,17 +30,15 @@ public class GameManagement : MonoBehaviour
     public IEnumerator Restart()
     {
         Debug.Log("Press SPACE");
-        int i = 0;
         while (!_isPlayerAlive)
         {
-            i++;
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 _isPlayerAlive = true;
-                SceneManager.LoadScene("Map_1");
+                Scene scene = SceneManager.GetActiveScene();
+                SceneManager.LoadScene(scene.name);
             }
 
-            if (i == 10000) break;
             yield return null;
         }
     }
