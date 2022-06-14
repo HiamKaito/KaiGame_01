@@ -364,8 +364,10 @@ MonoBehaviour:
   _animController: {fileID: 0}
   _playerSensor: {fileID: 0}
   _point: {x: 0, y: 0}
-  _atkRange: 0
+  _atkRange: 3
   _currentCombo: 0
+  _atkDelay: 0
+  _atkTimeDelay: 1.5
 --- !u!1001 &2837931492756768012
 PrefabInstance:
   m_ObjectHideFlags: 0

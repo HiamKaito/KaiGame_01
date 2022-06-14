@@ -18,8 +18,11 @@ public class E_Controller : MonoBehaviour
     [Space(10)]
     [Header("Attack Point")]
     [SerializeField] private Vector2 _point;
-    [SerializeField] private float _atkRange;
+    [SerializeField] private float _atkRange = 3.0f;
     [SerializeField] private int _currentCombo = 0;
+    [SerializeField] private float _atkDelay = 0.0f;
+    [SerializeField] private float _atkTimeDelay = 1.5f;
+
 
     private void Start()
     {
@@ -50,10 +53,12 @@ public class E_Controller : MonoBehaviour
 
         if (playerPosition == null) return;
 
-        if (isInAttackRange())
+        if (isInAttackRange() && Time.time > _atkDelay)
         {
             _animController.checkMove(0);
             _animController.attackAtCombo(1);
+
+            _atkDelay = Time.time + _atkTimeDelay;
             _currentCombo = 1;
         }
         else
@@ -65,7 +70,7 @@ public class E_Controller : MonoBehaviour
     public void Movement(float x, float y)
     {
         transform.position = Vector2.MoveTowards(
-            transform.position, new Vector2(x, transform.position.y), _enemy.stats.speed * Time.deltaTime
+            transform.position, new Vector2(x - _atkRange, y), _enemy.stats.speed * Time.deltaTime
         );
         _animController.checkMove(transform.position.x - x);
     }
@@ -73,7 +78,8 @@ public class E_Controller : MonoBehaviour
     public bool isInAttackRange()
     {
         var dis = DistanceCalculator.calculatorDis(transform, playerPosition);
-        if (dis <= 2.0f)
+
+        if (dis <= _atkRange + 1f && Mathf.Abs(transform.position.y - playerPosition.position.y) <= 5.0f)
         {
             return true;
         }
@@ -127,13 +133,9 @@ public class E_Controller : MonoBehaviour
         return vector2;
     }
 
-    // void OnDrawGizmosSelected()
-    // {
-    //     try
-    //     {
-    //         Gizmos.color = Color.cyan;
-    //         Gizmos.DrawWireSphere(FixedPoint(), _atkRange);
-    //     }
-    //     catch (UnityException e) { Debug.Log(e); }
-    // }
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireSphere(FixedPoint(), _atkRange);
+    }
 }
