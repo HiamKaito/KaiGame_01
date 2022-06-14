@@ -22,7 +22,8 @@ public class E_Controller : MonoBehaviour
     [SerializeField] private int _currentCombo = 0;
     [SerializeField] private float _atkDelay = 0.0f;
     [SerializeField] private float _atkTimeDelay = 1.5f;
-
+    [SerializeField] private int _atkCount = 0;
+    [SerializeField] private int[] _listCombo;
 
     private void Start()
     {
@@ -56,10 +57,31 @@ public class E_Controller : MonoBehaviour
         if (isInAttackRange() && Time.time > _atkDelay)
         {
             _animController.checkMove(0);
-            _animController.attackAtCombo(1);
+            //* =================================
+
+            _animController.attackAtCombo(_listCombo[_atkCount]);
+            _currentCombo = _listCombo[_atkCount];
+            _atkCount++;
+
+            if (_atkCount >= _listCombo.Length)
+            {
+                _atkCount = 0;
+            }
+            // if (_atkCount < 3)
+            // {
+            //     _animController.attackAtCombo(1);
+            //     _currentCombo = 1;
+            //     _atkCount++;
+            // }
+            // else
+            // {
+            //     _animController.attackAtCombo(2);
+            //     _currentCombo = 2;
+            //     _atkCount = 0;
+            // }
+            //* =================================
 
             _atkDelay = Time.time + _atkTimeDelay;
-            _currentCombo = 1;
         }
         else
         {
@@ -69,8 +91,13 @@ public class E_Controller : MonoBehaviour
 
     public void Movement(float x, float y)
     {
+        Vector2 vt2 = new Vector2();
+
+        if (_animController.isFacingRight) { vt2 = new Vector2(x + _atkRange - 1.0f, y); }
+        else { vt2 = new Vector2(x - _atkRange + 1.0f, y); }
+
         transform.position = Vector2.MoveTowards(
-            transform.position, new Vector2(x - _atkRange, y), _enemy.stats.speed * Time.deltaTime
+            transform.position, vt2, _enemy.stats.speed * Time.deltaTime
         );
         _animController.checkMove(transform.position.x - x);
     }
@@ -106,14 +133,22 @@ public class E_Controller : MonoBehaviour
         {
             foreach (Collider2D enity in col)
             {
-                if (enity.CompareTag("Player"))
-                {
-                    float damageDeal = _enemy.stats.attack;
-                    _enemy.Hit(enity.GetComponent<Hero>(), damageDeal);
-                }
+                dealDamage(enity);
             }
         }
     }
+    private void dealDamage(Collider2D enity)
+    {
+        float damageDeal = _enemy.stats.attack;
+        switch (_currentCombo)
+        {
+            case 1: damageDeal *= 1f; break;
+            case 2: damageDeal *= 2; break;
+        }
+
+        if (enity.CompareTag("Player")) { _enemy.Hit(enity.GetComponent<Hero>(), damageDeal); }
+    }
+
 
     public Vector2 FixedPoint()
     {

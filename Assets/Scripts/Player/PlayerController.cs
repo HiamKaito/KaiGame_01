@@ -5,6 +5,7 @@ using UnityEngine;
 public partial class PlayerController : MonoBehaviour
 {
     [Header("Player movement")]
+    [SerializeField] private bool _isControllable = true;
     [SerializeField] private float _movementSpeed = 300.0f;
     [SerializeField] private float _jumpForce = 10.0f;
     [SerializeField] private bool _isFacingRight = true;
@@ -45,10 +46,12 @@ public partial class PlayerController : MonoBehaviour
 
     private void Update()
     {
-
-        checkMove();
-        checkJump();
-        CheckCombo();
+        if (_isControllable)
+        {
+            checkMove();
+            checkJump();
+            CheckCombo();
+        }
     }
 
     private void FixedUpdate()
@@ -103,6 +106,8 @@ public partial class PlayerController : MonoBehaviour
 
     public void Death()
     {
+        animator.SetBool("isRun", false);
+        _isControllable = false;
         animator.SetBool("isAlive", false);
     }
 }

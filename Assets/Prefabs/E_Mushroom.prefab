@@ -218,8 +218,12 @@ MonoBehaviour:
   _animController: {fileID: 0}
   _playerSensor: {fileID: 0}
   _point: {x: 0, y: 0}
-  _atkRange: 0
+  _atkRange: 3
   _currentCombo: 0
+  _atkDelay: 0
+  _atkTimeDelay: 1.5
+  _atkCount: 0
+  _listCombo: 0100000002000000
 --- !u!1 &9045553415121566466
 GameObject:
   m_ObjectHideFlags: 0
