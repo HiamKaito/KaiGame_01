@@ -34,7 +34,7 @@ public partial class PlayerController : MonoBehaviour
     public void Start_Combo()
     {
         if (_comboCount < _maxComboCount && isPressAtkBtn()) { NextCombo(); }
-        //! BUG combo count
+        // ! BUG combo count
         else { if (_comboCount == _maxComboCount && isPressAtkBtn()) { FinishCombo(); } }
     }
 
@@ -44,8 +44,7 @@ public partial class PlayerController : MonoBehaviour
 
         _comboCount++;
         animator.SetTrigger("Attack_" + _comboCount);
-        // Debug.Log("Hero is going attact combo " + _comboCount);
     }
 
-    private void FinishCombo() => _comboCount = 0;
+    private void FinishCombo() { _comboCount = 0; ComboStatus_False(); }
 }

@@ -367,7 +367,7 @@ MonoBehaviour:
   _atkRange: 3
   _currentCombo: 0
   _atkDelay: 0
-  _atkTimeDelay: 1.5
+  _atkTimeDelay: 1
   _atkCount: 0
   _listCombo: 010000000100000002000000
 --- !u!1001 &2837931492756768012

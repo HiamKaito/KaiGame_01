@@ -186,6 +186,10 @@ PrefabInstance:
       propertyPath: _listCombo.Array.data[0]
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2837931494047634246, guid: 7fb08d10d4031214fa254925c9cd58c1, type: 3}
+      propertyPath: _listCombo.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2837931494047634617, guid: 7fb08d10d4031214fa254925c9cd58c1, type: 3}
       propertyPath: m_Name
       value: E_Goblin

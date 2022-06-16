@@ -2152,6 +2152,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2837931494047634246, guid: 7fb08d10d4031214fa254925c9cd58c1, type: 3}
+      propertyPath: _listCombo.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2837931494047634246, guid: 7fb08d10d4031214fa254925c9cd58c1, type: 3}
+      propertyPath: _listCombo.Array.data[0]
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2837931494047634617, guid: 7fb08d10d4031214fa254925c9cd58c1, type: 3}
       propertyPath: m_Name
       value: E_Goblin_3
@@ -2557,6 +2565,14 @@ PrefabInstance:
     - target: {fileID: 2837931494047634242, guid: 7fb08d10d4031214fa254925c9cd58c1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2837931494047634246, guid: 7fb08d10d4031214fa254925c9cd58c1, type: 3}
+      propertyPath: _listCombo.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2837931494047634246, guid: 7fb08d10d4031214fa254925c9cd58c1, type: 3}
+      propertyPath: _listCombo.Array.data[1]
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2837931494047634617, guid: 7fb08d10d4031214fa254925c9cd58c1, type: 3}
       propertyPath: m_Name
@@ -3398,6 +3414,18 @@ PrefabInstance:
     - target: {fileID: 2837931494047634242, guid: 7fb08d10d4031214fa254925c9cd58c1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2837931494047634246, guid: 7fb08d10d4031214fa254925c9cd58c1, type: 3}
+      propertyPath: _listCombo.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2837931494047634246, guid: 7fb08d10d4031214fa254925c9cd58c1, type: 3}
+      propertyPath: _listCombo.Array.data[1]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2837931494047634246, guid: 7fb08d10d4031214fa254925c9cd58c1, type: 3}
+      propertyPath: _listCombo.Array.data[3]
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2837931494047634617, guid: 7fb08d10d4031214fa254925c9cd58c1, type: 3}
       propertyPath: m_Name
