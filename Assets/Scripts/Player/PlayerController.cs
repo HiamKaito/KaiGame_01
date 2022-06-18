@@ -56,8 +56,48 @@ public partial class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _rb2D.velocity = new Vector2(movement.x * Time.fixedDeltaTime * _movementSpeed * 10, _rb2D.velocity.y);
+        Move();
+        Gravity();
     }
+
+    [Header("Move")][SerializeField] private float _acceleration = 90;
+    [SerializeField] private float _moveClamp = 13;
+    [SerializeField] private float _deAcceleration = 60f;
+    public void Move()
+    {
+        float _currentHorizontalSpeed = 0f;
+        if (movement.x != 0)
+        {
+            // Set horizontal move speed
+            _currentHorizontalSpeed += movement.x * _acceleration * Time.fixedDeltaTime * _movementSpeed;
+
+            // clamped by max frame movement
+            _currentHorizontalSpeed = Mathf.Clamp(_currentHorizontalSpeed, -_moveClamp, _moveClamp);
+        }
+        else
+        {
+            // No input. Let's slow the character down
+            _currentHorizontalSpeed = Mathf.MoveTowards(_currentHorizontalSpeed, 0, _deAcceleration * Time.fixedDeltaTime);
+        }
+
+        _rb2D.velocity = new Vector2(_currentHorizontalSpeed, _rb2D.velocity.y);
+        // _rb2D.velocity = new Vector2(movement.x * Time.fixedDeltaTime * _movementSpeed * 10, _rb2D.velocity.y);
+    }
+
+
+    [Header("Gravity")][SerializeField] private float _fallClamp = -40f;
+
+    private void Gravity()
+    {
+        // is not on ground
+        if (!_groundSensor.State())
+        {
+            _rb2D.velocity = new Vector2(_rb2D.velocity.x, _rb2D.velocity.y - _fallClamp * Time.deltaTime);
+        }
+
+    }
+
+
 
     //===========================================================================================================================
     //===========================================================================================================================
@@ -70,6 +110,7 @@ public partial class PlayerController : MonoBehaviour
     private void checkMove()
     {
         movement.x = Input.GetAxis("Horizontal");
+        movement.y = Input.GetAxis("Vertical");
 
         if (movement.x != 0)
         {
@@ -96,6 +137,12 @@ public partial class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && _groundSensor.State())
         {
             _rb2D.velocity = new Vector2(_rb2D.velocity.x, _jumpForce);
+            animator.SetBool("isRun", false);
+            animator.SetBool("isJump", true);
+        }
+        else
+        {
+            animator.SetBool("isJump", false);
         }
     }
 
