@@ -18,4 +18,11 @@ public class E_Mushroom : Enemy
 
         base.takeDamage(damage);
     }
+
+    public override void HitBy(HeroWizard hero, float damage)
+    {
+        Debug.Log(base._stats.Name + " got damaged " + damage + " by " + hero.stats.Name);
+
+        base.takeDamage(damage);
+    }
 }

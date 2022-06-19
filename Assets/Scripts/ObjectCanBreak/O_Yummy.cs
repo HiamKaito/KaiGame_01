@@ -9,4 +9,10 @@ public class O_Yummy : ObjectCanBreak
         Debug.Log(base._stats.Name + " got damaged " + damageDeal + " by " + heroAssassin.stats.Name);
         base.takeDamage(damageDeal);
     }
+
+    public override void HitBy(HeroWizard heroWizard, float damageDeal)
+    {
+        Debug.Log(base._stats.Name + " got damaged " + damageDeal + " by " + heroWizard.stats.Name);
+        base.takeDamage(damageDeal);
+    }
 }

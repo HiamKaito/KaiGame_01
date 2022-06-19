@@ -33,6 +33,7 @@ public abstract class ObjectCanBreak : LivingEntity, IHitable_Enemy
     //! THIS CANT ATTACK PLAYER, SO WTF IS THIS FOR?
     public virtual void Hit(Hero hero, float damageDeal) => Debug.Log("");
     public abstract void HitBy(HeroAssassin heroAssassin, float damageDeal);
+    public abstract void HitBy(HeroWizard heroWizard, float damageDeal);
 
     public override void takeDamage(float damage)
     {

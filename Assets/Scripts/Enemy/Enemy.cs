@@ -45,6 +45,7 @@ public abstract class Enemy : LivingEntity, IHitable_Enemy
 
     public abstract void Hit(Hero hero, float damageDeal);
     public abstract void HitBy(HeroAssassin hero, float damage);
+    public abstract void HitBy(HeroWizard heroWizard, float damage);
 
 
     public override void takeDamage(float damage)

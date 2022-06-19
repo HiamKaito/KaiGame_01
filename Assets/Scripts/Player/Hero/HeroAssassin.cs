@@ -7,7 +7,7 @@ public class HeroAssassin : Hero
     [SerializeField] private Vector2 _point;
     [SerializeField] private float _atkRange;
 
-    public void HeroAttack()
+    public override void HeroAttack()
     {
         Collider2D[] col = Physics2D.OverlapCircleAll(FixedPoint(), _atkRange);
 

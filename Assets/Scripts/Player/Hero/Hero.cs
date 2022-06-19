@@ -36,6 +36,7 @@ public abstract class Hero : LivingEntity, IHitable_Hero
         _hpCtrl.SetHealthBar(base._hitPoint, base._maxHitPoint);
     }
 
+    public abstract void HeroAttack();
     public abstract void Hit(Enemy ememy, float damageDeal);
     public abstract void Hit(ObjectCanBreak objectCanBreak, float damageDeal);
 
