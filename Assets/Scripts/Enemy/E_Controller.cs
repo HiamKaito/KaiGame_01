@@ -87,6 +87,19 @@ public class E_Controller : MonoBehaviour
         {
             moveToTarget();
         }
+        Gravity();
+    }
+
+    [Header("Gravity")][SerializeField] private float _fallClamp = 30f;
+
+    private void Gravity()
+    {
+        // is not on ground
+        if (!_animController._groundSensor.State())
+        {
+            _rb2D.velocity = new Vector2(_rb2D.velocity.x, _rb2D.velocity.y - _fallClamp * Time.deltaTime);
+        }
+
     }
 
     public void Movement(float x, float y)
