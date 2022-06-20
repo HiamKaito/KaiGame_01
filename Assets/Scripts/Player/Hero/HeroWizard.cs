@@ -6,16 +6,23 @@ public class HeroWizard : Hero
 {
     [SerializeField] private Transform atkSpellPoint;
     [SerializeField] private GameObject spellAtk;
+
     public override void HeroAttack()
     {
-        Instantiate(spellAtk, atkSpellPoint.position, atkSpellPoint.rotation);
+        Instantiate(spellAtk, atkSpellPoint.position, atkSpellPoint.rotation);//.transform.parent = gameObject.transform;
+    }
 
-        RaycastHit2D hitInfo = Physics2D.Raycast(atkSpellPoint.position, atkSpellPoint.right);
-
-        if (hitInfo)
+    public void dealDamage(Collider2D enity)
+    {
+        float damageDeal = base.stats.attack;
+        switch (PlayerController.instants.ComboCount)
         {
-            Debug.Log("I got it");
+            case 1: damageDeal *= 1f; break;
+            case 2: damageDeal *= 2; break;
         }
+
+        if (enity.CompareTag("Enemy")) { Hit(enity.GetComponent<Enemy>(), damageDeal); }
+        if (enity.CompareTag("ObjectCanBreak")) { Hit(enity.GetComponent<ObjectCanBreak>(), damageDeal); }
     }
 
     public override void Hit(Enemy enemy, float damageDeal)
