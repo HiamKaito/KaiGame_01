@@ -299,11 +299,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &181380860 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 181380860, guid: 562b907caf1cb2948ad014483e45796d, type: 3}
-  m_PrefabInstance: {fileID: 7649757247330355727}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &848443681 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7649757246566085422, guid: 562b907caf1cb2948ad014483e45796d, type: 3}
@@ -388,7 +383,7 @@ Transform:
   m_GameObject: {fileID: 1056149309}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -3, z: 0}
-  m_LocalScale: {x: 50, y: 1, z: 1}
+  m_LocalScale: {x: 200, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -825,25 +820,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hero_Wizard
       objectReference: {fileID: 0}
-    - target: {fileID: 7649757246566085417, guid: 562b907caf1cb2948ad014483e45796d, type: 3}
-      propertyPath: atkSpellPoint
-      value: 
-      objectReference: {fileID: 181380860}
-    - target: {fileID: 7649757246566085419, guid: 562b907caf1cb2948ad014483e45796d, type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 7649757246566085422, guid: 562b907caf1cb2948ad014483e45796d, type: 3}
       propertyPath: m_RootOrder
       value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7649757246566085422, guid: 562b907caf1cb2948ad014483e45796d, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7649757246566085422, guid: 562b907caf1cb2948ad014483e45796d, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7649757246566085422, guid: 562b907caf1cb2948ad014483e45796d, type: 3}
       propertyPath: m_LocalPosition.x
