@@ -62,7 +62,7 @@ Transform:
   m_GameObject: {fileID: 7649757246566085393}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -15.86, y: -0.62, z: 0}
-  m_LocalScale: {x: 3.5, y: 3.5, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7649757247581620801}
@@ -170,7 +170,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &7649757246566085392
 Animator:
   serializedVersion: 4
@@ -238,7 +238,7 @@ MonoBehaviour:
   _floatingTextDame: {fileID: 4099197039445779591, guid: 5fb030034abd1bf4b8a917d341a3625f, type: 3}
   _blood: {fileID: 4099197039445779591, guid: b6c66b35ec2914f4ca5197933e1531bd, type: 3}
   _UIDeath: {fileID: 8250323883893622589, guid: c3f617fca7737d740a9511e55db38a6e, type: 3}
-  atkSpellPoint: {fileID: 181380859}
+  atkSpellPoint: {fileID: 181380860}
   spellAtk: {fileID: 6328758176275555513, guid: 17d9c80e136493341975323a48a4d7d5, type: 3}
 --- !u!1 &7649757247581620802
 GameObject:

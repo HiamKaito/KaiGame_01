@@ -469,15 +469,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3510123795711545870, guid: 98892f1474d187e4db6da2811d19352b, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 3510123795711545870, guid: 98892f1474d187e4db6da2811d19352b, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6335448388082295330, guid: 98892f1474d187e4db6da2811d19352b, type: 3}
       propertyPath: m_Name
       value: HealthBar_Prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335448388082295330, guid: 98892f1474d187e4db6da2811d19352b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799823587726121905, guid: 98892f1474d187e4db6da2811d19352b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98892f1474d187e4db6da2811d19352b, type: 3}

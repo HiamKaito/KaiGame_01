@@ -7,7 +7,7 @@ public class ChangeScene : MonoBehaviour
 {
     enum sceneNames
     {
-        Tutorial, Map_1, Map_2
+        Tutorial, Map_1, Map_2, Map_3, Map_4, Map_5, Map_6, End
     }
 
     [SerializeField] private sceneNames _sceneName;

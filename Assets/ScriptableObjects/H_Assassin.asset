@@ -15,7 +15,7 @@ MonoBehaviour:
   Name: Assassin
   HealthPoint: 100
   attack: 10
-  speed: 30
-  ManaPoint: 100
-  defend: 50
+  speed: 5
+  ManaPoint: 0
+  defend: 0
   jumpForce: 10

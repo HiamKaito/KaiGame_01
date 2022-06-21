@@ -7,6 +7,7 @@ public class H_Spell : MonoBehaviour
     [SerializeField] private float _speed = 20.0f;
     [SerializeField] private Rigidbody2D _rb2D;
     [SerializeField] private HeroWizard _hero;
+    [SerializeField] private GameObject[] _listHitEffect;
     private void Start()
     {
         _rb2D = GetComponent<Rigidbody2D>();
@@ -19,6 +20,10 @@ public class H_Spell : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        _hero.dealDamage(other);
+        if (other.CompareTag("Enemy") || other.CompareTag("ObjectCanBreak"))
+        {
+            Instantiate(_listHitEffect[Random.Range(0, _listHitEffect.Length)], transform.position, Quaternion.identity);
+            _hero.dealDamage(other);
+        }
     }
 }
