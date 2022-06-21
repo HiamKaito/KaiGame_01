@@ -122,6 +122,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 20
   _rb2D: {fileID: 0}
+  _hero: {fileID: 0}
+  _listHitEffect:
+  - {fileID: 8998928050327059041, guid: a82962c33bfc90c47a68871e4f9ed1a4, type: 3}
+  - {fileID: 7579536416617614498, guid: a2001a4df882ae34f89fdd04c8598caa, type: 3}
+  - {fileID: 2690213982463746988, guid: 83b2e110275978f48855e9034417d18c, type: 3}
 --- !u!61 &3753269505529512189
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -135,7 +140,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.15524632, y: -0.018264338}
+  m_Offset: {x: -0.02, y: -0.01719068}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -146,7 +151,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.24188346, y: 0.26520696}
+  m_Size: {x: 0.036865234, y: 0.26305965}
   m_EdgeRadius: 0
 --- !u!50 &4446271858491600895
 Rigidbody2D:
