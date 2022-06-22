@@ -181,9 +181,9 @@ public class E_Controller : MonoBehaviour
         return vector2;
     }
 
-    void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.cyan;
-        Gizmos.DrawWireSphere(FixedPoint(), _atkRange);
-    }
+    // void OnDrawGizmosSelected()
+    // {
+    //     Gizmos.color = Color.cyan;
+    //     Gizmos.DrawWireSphere(FixedPoint(), _atkRange);
+    // }
 }

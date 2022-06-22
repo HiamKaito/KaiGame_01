@@ -51,6 +51,7 @@ public partial class PlayerController : MonoBehaviour
             checkMove();
             checkJump();
             CheckCombo();
+            checkGrounded();
         }
     }
 
@@ -130,10 +131,17 @@ public partial class PlayerController : MonoBehaviour
 
     private void checkJump()
     {
+        animator.SetFloat("YSpeed", _rb2D.velocity.y);
         if (Input.GetKeyDown(KeyCode.Space) && _groundSensor.State())
         {
             _rb2D.velocity = new Vector2(_rb2D.velocity.x, _jumpForce);
+            animator.SetTrigger("isJump");
         }
+    }
+
+    private void checkGrounded()
+    {
+        animator.SetBool("isGrounded", _groundSensor.State());
     }
 
     public void isDamaged()

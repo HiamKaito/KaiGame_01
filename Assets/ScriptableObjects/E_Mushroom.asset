@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: E_Mushroom
   m_EditorClassIdentifier: 
   Name: Mushroom
-  HealthPoint: 50
-  attack: 20
+  HealthPoint: 400
+  attack: 100
   speed: 3
   H_AssAtk_Inc: 0
   H_AssAtk_Des: 5

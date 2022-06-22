@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: E_Goblin
   m_EditorClassIdentifier: 
   Name: Goblin
-  HealthPoint: 100
+  HealthPoint: 200
   attack: 10
   speed: 7
   H_AssAtk_Inc: 5

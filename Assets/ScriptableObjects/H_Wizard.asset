@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Wizard
   HealthPoint: 50
-  attack: 30
+  attack: 15
   speed: 3
   ManaPoint: 0
   defend: 0
-  jumpForce: 10
+  jumpForce: 15

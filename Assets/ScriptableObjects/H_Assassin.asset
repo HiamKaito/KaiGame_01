@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: H_Assassin
   m_EditorClassIdentifier: 
   Name: Assassin
-  HealthPoint: 100
+  HealthPoint: 200
   attack: 10
   speed: 5
   ManaPoint: 0
   defend: 0
-  jumpForce: 10
+  jumpForce: 15

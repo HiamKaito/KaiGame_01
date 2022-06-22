@@ -78,9 +78,9 @@ public class HeroAssassin : Hero
     }
 
 
-    void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.cyan;
-        Gizmos.DrawWireSphere(FixedPoint(), _atkRange);
-    }
+    // void OnDrawGizmosSelected()
+    // {
+    //     Gizmos.color = Color.cyan;
+    //     Gizmos.DrawWireSphere(FixedPoint(), _atkRange);
+    // }
 }
