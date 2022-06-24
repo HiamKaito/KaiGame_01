@@ -5,6 +5,10 @@
 
 # Thông tin chung Flow
 
-<div>
+<div  align="center">
+<img src="chart.PNG" >
+</div>
+
+<div  align="center">
 <img src="KaiGame_01-Master.jpg" >
 </div>
